@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StackOverFlow</title>
+</head>
+<body>
+    <h3>Вопросы и ответы</h3>
+    <ul>
+        {% for question in questions %}
+            <li> <a href="/question/{{ question.id }}">{{ question.title }}</a> </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
